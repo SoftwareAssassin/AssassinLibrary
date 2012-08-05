@@ -8,7 +8,7 @@
     <ProjectGuid>{467C05CE-AE45-4AA7-A876-F53248935C2C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AssassinLibrary</RootNamespace>
+    <RootNamespace>Assassin</RootNamespace>
     <AssemblyName>AssassinLibrary</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -32,9 +32,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -45,8 +48,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TNetString.cs" />
+    <Compile Include="BackgroundService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BackgroundServiceInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Serialization\TNetString.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_namespace.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
