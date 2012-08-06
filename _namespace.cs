@@ -1,6 +1,5 @@
 ﻿///
 /// Original Author: Software Assassin
-/// http://www.softwareassassin.com
 /// 
 /// GNU All-Permissive License:
 /// Copying and distribution of this file, with or without modification,
@@ -11,8 +10,9 @@
 /// Source code available at:
 /// https://github.com/SoftwareAssassin/AssassinLibrary
 /// 
-
-using System;
+/// Professional support available at:
+/// http://www.softwareassassin.com
+/// 
 
 namespace Assassin
 {
