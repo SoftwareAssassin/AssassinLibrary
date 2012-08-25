@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Assassin</RootNamespace>
-    <AssemblyName>AssassinLibrary</AssemblyName>
+    <AssemblyName>Assassin</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -54,6 +54,9 @@
     <Compile Include="BackgroundServiceInstaller.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Base.cs" />
+    <Compile Include="Convert.cs" />
+    <Compile Include="Globals.cs" />
     <Compile Include="Serialization\TNetString.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="_namespace.cs" />
