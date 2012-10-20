@@ -161,7 +161,7 @@ namespace Assassin.Serialization
 
 			//custom package types
 			else if (type.Value == '@')
-				data.Append(System.Convert.ToDateTime(input).ToString("yyyy-MM-ddTHH:mm:ss.fff"));
+				data.Append(System.Convert.ToDateTime(input).ToString("yyyy-MM-dd HH:mm:ss.fff"));
 
 			//generate and return TNetString object
 			return new TNetString(input
